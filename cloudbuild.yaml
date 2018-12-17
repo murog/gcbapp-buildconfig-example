@@ -1,9 +1,9 @@
 steps:
-    #- name: 'gcr.io/cloud-builders/go'
+- name: 'gcr.io/cloud-builders/go'
   args: ['install', '.']
   env: ['PROJECT_ROOT=hello']
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'hello']
+  args: ['build', 'hello'] ]
   env: ['PROJECT_ROOT=hello']
 artifacts:
   objects:
